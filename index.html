@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="src/new_logo.png" />
+    <title>Maicol Manasses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <img src="src/new_logo.png" width="30px" height="30px" alt="">
+        <ul>
+            <li><a href="#home" onclick="toggle()">Início</a></li>
+            <li><a href="#about" onclick="toggle()">Sobre</a></li>
+            <li><a href="#projetos" onclick="toggle()">Projetos</a></li>
+            <li><a href="#contato" onclick="toggle()">Contato</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section id="home">
+        <p class="w-text">Olá, meu nome é </p>
+        <div>
+            <h1>Maicol Manasses.</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+        <p>Gosto de programar, aprender novos conhecimentos, testá-los e aplicá-los. Atualmente estou melhorando meu portfólio criando sites e aplicativos.
+        </p>
+        <a href="#projetos">Confira meu Projetos</a>
+    </section>
+
+    <section id="about">
+        <h2>Sobre</h2>
+        <p>Olá! Me chamo Maicol e gosto de criar sites, sistemas e aplicativos. <br>Meu interesse pela programação começou em 2010 quando
+            estudei Algortimo e Programação pela primeira vez. <br>
+            Avançando para hoje, estudo Análise e Desenvolvimento de Sistemas e sempre que possível faço cursos de aperfeiçoamento.
+            <span id="mySpan">CURSOS</span>
+        </p>
+        
+        <div id="table">
+            <h3>Formação</h3>
+            <div class="tab">
+            <img src="https://img.icons8.com/fluency-systems-filled/40/393E46/education.png" class="tablinks" onclick="openGrad(event, 'Unisc')" id="defaultOpen">
+            <img src="https://img.icons8.com/fluency-systems-filled/40/393E46/education.png" class="tablinks" onclick="openGrad(event, 'Ufsm')">
+            </div>
+    
+            <div id="Unisc" class="tabcontent">
+                <h4>Unisc</h4>
+                <ul>
+                    <li>Curso: Análise e Desenvolvimento de Sistemas</li>
+                    <li>Status: Cursando</li>
+                    <li>Ingresso: 2021</li>
+                    <li>Conclusão: 2023</li>
+                </ul>
+            </div>
+            <div id="Ufsm" class="tabcontent">
+                <h4>Ufsm</h4>
+                <ul>
+                    <li>Curso: Engenharia de Control e Automação</li>
+                    <li>Status: Trancado</li>
+                    <li>Ingresso: 2010</li>
+                    <li>Conclusão: 36 Disciplinas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <p>Em breve, aqui estarão meu principais projetos. Enquanto isso, você poderá ver alguns projetos meus
+            no GitHub.
+        </p>
+        <div id="github">
+            <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/github.png"/>
+            <a href="https://github.com/Maiquera">GitHub</a>
+        </div>
+        <img src="src/gif_site.gif" alt="">
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Sinta-se a vontadade para entrar em contato por estes canais:</p>
+        <div id="conitens">
+            <div class="itens">
+                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/linkedin-2--v1.png"/>
+                <a href="https://www.linkedin.com/in/maicol-menezes/"><p>www.linkedin.com</p></a>
+            </div>
+            <div class="itens">
+                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/circled-envelope.png"/>
+                <p>maicolmenezes@gmail.com</p>
+            </div>
+            <div class="itens">
+                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png"/>
+                <p>+55 (51)9 9587-0974</p>
+            </div>
+            <div class="itens">
+                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png"/>
+                <p>+55 (51)9 8046-9821</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Designed & Built by Maicol Manasses</p>
+    </footer>
+
+    <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Cursos e Certificados</h2>
+                <ul>
+                    <li>
+                        <h4>Desenvolvimento Fron-End</h4>
+                        <li>Instituição: Grupo Voalle</li>
+                        <li>Duração: 12h</li>
+                        <li>Data: 08/2022</li>
+                    </li>
+                    <li>
+                        <h4>EF SET English Certificate (B1 Proficient)</h4>
+                        <li>Instituição: EF Standart English Test</li>
+                        <li>Duração: --</li>
+                        <li>Data: 08/2022</li>
+                    </li>
+                    <li>
+                        <h4>GFT Start Java</h4>
+                        <li>Instituição: Digital Innovation One</li>
+                        <li>Duração: 53h</li>
+                        <li>Data: 04/2022</li>
+                    </li>
+                    <li>
+                        <h4>GFT Quality Assurance</h4>
+                        <li>Instituição: Digital Innovation One</li>
+                        <li>Duração: 64h</li>
+                        <li>Data: 03/2022</li>
+                    </li>
+                    <li>
+                        <h4>Scrum Fundamentals Certificate</h4>
+                        <li>Instituição: SCRUMstudy</li>
+                        <li>Duração: --</li>
+                        <li>Data: 03/2022</li>
+                    </li>
+                    <li>
+                        <h4>Spread Java Developer</h4>
+                        <li>Instituição: Digital Innovation One</li>
+                        <li>Duração: 97h</li>
+                        <li>Data: 03/2022</li>
+                    </li>
+                    <li>
+                        <h4>Desenvolvedor Web Completo</h4>
+                        <li>Instituição: Udemy</li>
+                        <li>Duração: 48h</li>
+                        <li>Data: 09/2021</li>
+                    </li>
+                    <li>
+                        <h4>HTML Web Developer</h4>
+                        <li>Instituição: Digital Innovation One</li>
+                        <li>Duração: 27h</li>
+                        <li>Data: 07/2021</li>
+                    </li>
+                    <li>
+                        <h4>UI & UX Design</h4>
+                        <li>Instituição: Udemy</li>
+                        <li>Duração: 16h</li>
+                        <li>Data: 06/2021</li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

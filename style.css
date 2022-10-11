@@ -1,0 +1,353 @@
+:root {
+    --first-color: #CCD6F6;
+    --second-color: #32E0C4;
+    --thyrd-color: #393E46;
+    --four-color: #222831;
+    --five-color:#8892B0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+body {
+ background-color: var(--four-color);
+}
+
+header {
+    background-color: var(--four-color);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 1000;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    list-style: none; 
+    text-align: center;  
+}
+
+header ul li a {
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--second-color);
+    transition: color 1s ease-in-out;
+}
+
+header ul li a:hover {
+    transition: ease-in;
+    color: var(--first-color);
+}
+
+.toggle {
+    display: none;
+}
+/* ------------- section one ------------------ */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 100vh;
+    
+}
+
+.w-text {
+    color: var(--second-color);
+    letter-spacing: 0.15rem;
+}
+
+h1 {
+    color: var(--first-color);
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    line-height: 0.9;
+    text-shadow: 1px 1px 1px var(--thyrd-color), 2px 2px 1px var(--thyrd-color);
+}
+
+h2, p {
+    color:var(--five-color);
+}
+
+h3, h4 {
+    color: var(--first-color);
+}
+
+h3 {
+    text-align: center;
+}
+
+#home a {
+    text-decoration: none;
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* ------------- section about ------------------ */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: var(--first-color);
+}
+
+#table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    float: left;
+}
+  
+.tab img {
+margin: 0px 5px;
+border-radius: 50%;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.tab img:hover {
+background-color: var(--second-color);
+}
+
+.tab img.active {
+background-color: var(--second-color);
+}
+
+.tabcontent {
+    float: left;
+    padding: 5px 12px;
+    border-bottom: 1px solid var(--second-color);
+    border-right:1px solid var(--second-color);
+    border-left: none;
+}
+
+.tabcontent ul {
+    list-style: none;
+    color: var(--five-color);
+}
+
+/* ------------------- section projects ---------------------- */
+
+#projetos {
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#projetos a {
+    text-decoration: none;
+    color: var(--second-color);
+    text-align: center;
+    padding-left: 5px;
+    
+}
+
+#github {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    border: 1px solid var(--second-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ------------------- section contato ---------------------- */
+
+#contato {
+    width: 100%;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#conitens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+}
+
+.itens {
+    display: flex;
+    align-items: center;
+}
+.itens p {
+    padding-left: 10px;
+}
+.itens a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+footer p {
+    color: var(--second-color);
+}
+
+#mySpan {
+    color: #32E0C4;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: var(--four-color);
+    padding: 10px 20px;
+    width: 100%;
+    opacity: 0.9;
+    color: var(--first-color); /* Could be more or less, depending on screen size */
+  }
+  
+  .modal-content ul {
+    list-style: none;
+  }
+  .modal-content li {
+    margin: 2px 0px;
+  }
+  .modal-content h4 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  
+  .close {
+    color: var(--second-color);
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+    
+  }
+
+/* ---------------------------------------------------------- */
+
+@media (max-width: 400px) {
+
+    header ul {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 20px;
+        background: var(--four-color);
+        overflow: auto;
+        transition: 0.5s;
+        flex-direction: column;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    header ul li a {
+        margin: 5px 0;
+        font-size: 24px;
+        align-items: center;
+        
+    }
+
+    .toggle {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle::before{
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: var(--second-color);
+        content: '';
+        z-index: 1;
+        box-shadow: 0 10px 0 var(--second-color);
+        transition: 0.5s;
+    }
+
+    .toggle::after{
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: var(--second-color);
+        content: '';
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    header.active .toggle::before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 var(--second-color);
+    }
+
+    header.active .toggle::after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0 var(--second-color);
+    }
+
+    header.active ul {
+        top: 50px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
