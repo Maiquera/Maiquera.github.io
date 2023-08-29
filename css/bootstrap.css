@@ -80,7 +80,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #383844;
+  --bs-body-bg: #fff;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -204,11 +204,11 @@ body {
 }
 
 hr {
-  margin: 0;
-  color: #FFFFFF;
+  margin: 1rem 0;
+  color: inherit;
   border: 0;
   border-top: var(--bs-border-width) solid;
-  opacity: 1;
+  opacity: 0.25;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -230,18 +230,15 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
-  color: #86B3B9;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
-    
   }
 }
 
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
-  color: #FFFFFF;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -269,7 +266,6 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #FFFFFF;
 }
 
 abbr[title] {
@@ -4570,9 +4566,9 @@ textarea.form-control-lg {
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
-  --bs-accordion-btn-color: #FFFFFF;
+  --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
@@ -4645,7 +4641,7 @@ textarea.form-control-lg {
 }
 
 .accordion-item {
-  color: #FFFFFF;
+  color: var(--bs-accordion-color);
   background-color: var(--bs-accordion-bg);
   border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
 }
@@ -12062,6 +12058,11 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
