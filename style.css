@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 :root {
-    --first-color: #CCD6F6;
-    --second-color: #32E0C4;
-    --thyrd-color: #393E46;
-    --four-color: #222831;
-    --five-color:#8892B0;
+    --first-color: #FFD700;
+    --second-color: #BF9F1C;
+    --third-color: #758D72;
+    --fourth-color: #577362;
+    --fifth-color: #1B2A29;
 }
 
 * {
@@ -11,33 +16,35 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-family: 'Share Tech Mono', monospace;
     letter-spacing: 0.1rem;
 }
 
 body {
- background-color: var(--four-color);
+    background-color: var(--fifth-color);
+
 }
 
 header {
-    background-color: var(--four-color);
+    background-color: var(--fourth-color);
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 50px;
     opacity: 0.9;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
-    z-index: 1000;
+    padding: 0% 6%;
+    z-index: 5000;
 }
 
 header ul {
     position: relative;
     display: flex;
-    list-style: none; 
-    text-align: center;  
+    list-style: none;
+    text-align: center;
+    width: 300px;
+    justify-content: space-around;
 }
 
 header ul li a {
@@ -46,134 +53,202 @@ header ul li a {
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
-    color: var(--second-color);
-    transition: color 1s ease-in-out;
+    color: var(--first-color);
+    transition: color 0.5s ease-in-out;
+    font-weight: bold;
 }
 
 header ul li a:hover {
     transition: ease-in;
-    color: var(--first-color);
+    color: var(--third-color);
 }
 
 .toggle {
     display: none;
 }
-/* ------------- section one ------------------ */
+
+/* ------------- section home ------------------ */
 #home {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 0% 20%;
     height: 100vh;
-    
+    text-align: center;
+    align-items: center;
 }
 
-.w-text {
-    color: var(--second-color);
-    letter-spacing: 0.15rem;
+#name {
+    font-family: 'Lilita One', cursive;
+    font-size: 8em;
+    letter-spacing: -1px;
+    line-height: 100px;
+    color: var(--first-color);
+}
+
+#sname {
+    padding-left: 1px;
+    width: min-content;
+    font-family: 'Lilita One', cursive;
+    font-size: 5em;
+    letter-spacing: 8px;
+    line-height: 61px;
+    background-color: var(--first-color);
+    color: var(--fifth-color);
 }
 
 h1 {
-    color: var(--first-color);
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    line-height: 0.9;
-    text-shadow: 1px 1px 1px var(--thyrd-color), 2px 2px 1px var(--thyrd-color);
-}
-
-h2, p {
-    color:var(--five-color);
-}
-
-h3, h4 {
-    color: var(--first-color);
-}
-
-h3 {
-    text-align: center;
-}
-
-#home a {
-    text-decoration: none;
-    border: 1px solid var(--second-color);
+    font-size: x-large;
+    letter-spacing: 10px;
     color: var(--second-color);
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
+    padding-left: 8px;
 }
+
+#wrapsocial {
+    position: absolute;
+    left: 5.5%;
+    height: 400px;
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#fortune_sun {
+    position:absolute;
+    top:120px;
+    right:120px;
+    width: 150px;
+}
+
+
 /* ------------- section about ------------------ */
 
 #about {
+    position: relative;
+    background-color: var(--third-color);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding-top: 50px;
     padding-left: 20%;
     padding-right: 20%;
-    color: var(--first-color);
+
 }
 
-#table {
-    width: 100%;
+h3, p {
+    font-family: 'Lilita One', cursive;
+}
+
+h2 {
+    text-decoration: underline;
+    color: var(--fifth-color);
+    font-size: 30px;
+}
+
+#studies {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    margin-top: 6px;
 }
 
-.tab {
-    float: left;
-}
-  
-.tab img {
-margin: 0px 5px;
-border-radius: 50%;
-cursor: pointer;
-transition: 0.3s;
+#skills {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 38px;
 }
 
-.tab img:hover {
-background-color: var(--second-color);
+#skills h3 {
+    position: absolute;
+    top: -12px;
+    right: calc(50% - 25px);
 }
 
-.tab img.active {
-background-color: var(--second-color);
+.cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 30%;
+    min-height: 148px;
+    border: 1px solid var(--fifth-color);
+    border-radius: 8px;
+    padding-top: 6px;
 }
 
-.tabcontent {
-    float: left;
-    padding: 5px 12px;
-    border-bottom: 1px solid var(--second-color);
-    border-right:1px solid var(--second-color);
-    border-left: none;
+.cards h4 {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: var(--third-color);
+    padding-left: 6px;
+    padding-right: 4px;
 }
 
-.tabcontent ul {
-    list-style: none;
-    color: var(--five-color);
+figure {
+    padding: 6px;
 }
+
+.skill-icon {
+    width: 40px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 8px;
+}
+
+
 
 /* ------------------- section projects ---------------------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #projetos {
+    position: relative;
+    background-color: var(--fifth-color);
     width: 100%;
     height: 100vh;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#projetos a {
+#projetos h2 {
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--third-color);
     text-align: center;
     padding-left: 5px;
-    
+
 }
 
 #github {
@@ -185,6 +260,21 @@ background-color: var(--second-color);
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------- section contato ---------------------- */
 
@@ -211,9 +301,11 @@ background-color: var(--second-color);
     display: flex;
     align-items: center;
 }
+
 .itens p {
     padding-left: 10px;
 }
+
 .itens a {
     text-decoration: none;
 }
@@ -228,53 +320,86 @@ footer p {
     color: var(--second-color);
 }
 
-#mySpan {
-    color: #32E0C4;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-  }
-  
-  .modal-content {
-    background-color: var(--four-color);
-    padding: 10px 20px;
+/* ----------------------------waves style----------------------- */
+
+.waves {
+    position: absolute;
     width: 100%;
-    opacity: 0.9;
-    color: var(--first-color); 
-  }
-  
-  .modal-content ul {
-    list-style: none;
-  }
-  .modal-content li {
-    margin: 2px 0px;
-  }
-  .modal-content h4 {
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-  
-  .close {
-    color: var(--second-color);
-    float: right;
-    font-size: 48px;
-    font-weight: bold;
-    
-  }
+    bottom: 0px;
+    left: 0px;
+    height: 15vh;
+ 
+}
+
+.sevaw {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -15vh;
+    height: 0vh;
+    min-height: 100px;
+    max-height: 150px;
+    z-index: 1000;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (width: 7680px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+
 
 /* ---------------------------------------------------------- */
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
 
     header ul {
         position: absolute;
@@ -294,7 +419,7 @@ footer p {
         margin: 5px 0;
         font-size: 24px;
         align-items: center;
-        
+
     }
 
     .toggle {
@@ -305,7 +430,7 @@ footer p {
         cursor: pointer;
     }
 
-    .toggle::before{
+    .toggle::before {
         position: absolute;
         top: 4px;
         width: 100%;
@@ -317,7 +442,7 @@ footer p {
         transition: 0.5s;
     }
 
-    .toggle::after{
+    .toggle::after {
         position: absolute;
         bottom: 4px;
         width: 100%;
@@ -346,10 +471,36 @@ footer p {
         transform: translateY(0);
     }
 
-    #home, #about, #projetos, #contato {
+    #name {
+        font-size: 6rem;
+        color: var(--first-color);
+    }
+    #sname {
+        font-size: 4em;
+        color: var(--fifth-color);
+        letter-spacing: 4px;
+    }
+    h1 {
+        font-size: medium;        
+        letter-spacing: 9px;
+        color: var(--second-color);
+    }
+
+    #wrapsocial {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: max-content;
+        width: 350px;
+        left: 0px;
+        top:100px;
+    }
+
+    #home,
+    #about,
+    #projetos,
+    #contato {
         padding: 0% 8%;
     }
-}
-
-
-
+    /*------------*/  
+}                                                                                                                                                                                                                                   

@@ -1,173 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="imagem/png" href="src/new_logo.png" />
+    <link rel="icon" type="imagem/png" href="src/Logo.png" />
     <title>Maicol Manasses</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="navbar">
-        <img src="src/new_logo.png" width="30px" height="30px" alt="">
+        <a href="#home" onclick="toggle()">
+            <img src="src/Logo.png" width="30px" height="30px" alt="">
+        </a>
         <ul>
-            <li><a href="#home" onclick="toggle()">Início</a></li>
-            <li><a href="#about" onclick="toggle()">Sobre</a></li>
-            <li><a href="#projetos" onclick="toggle()">Projetos</a></li>
-            <li><a href="#contato" onclick="toggle()">Contato</a></li>
+            <li><a href="#" onclick="toggle()">HOME</a></li>
+            <li><a href="#about" onclick="toggle()">SOBRE</a></li>
+            <li><a href="#projetos" onclick="toggle()">PROJETOS</a></li>
+            <li><a href="#contato" onclick="toggle()">CONTATO</a></li>
         </ul>
         <div class="toggle" onclick="toggle()"></div>
     </header>
 
     <section id="home">
-        <p class="w-text">Olá, meu nome é </p>
-        <div>
-            <h1>Maicol Manasses.</h1>
-            <h2>Full Stack Developer</h2>
+        <p id="name">MAICOL</p>
+        <p id="sname">MANASSES</p>
+        <h1> FULL-STACK DEVELOPER</h1>
+        <img id="fortune_sun" src="Untitled.png"/>     
+        <div id="wrapsocial">
+            <a href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/linkedin.png"
+                    alt="linkedin" /></a>
+            <a href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/github--v1.png"
+                    alt="github--v1" /></a>
+            <a href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/behance.png"
+                    alt="behance" /></a>
         </div>
-        <p>Gosto de programar, aprender novos conhecimentos, testá-los e aplicá-los. Atualmente estou melhorando meu portfólio criando sites e aplicativos.
-        </p>
-        <a href="#projetos">Confira meu Projetos</a>
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(117, 141, 114, 0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(117, 141, 114, 0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(117, 141, 114, 0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(117, 141, 114, 1)" />
+            </g>
+        </svg>
+
     </section>
 
     <section id="about">
         <h2>Sobre</h2>
-        <p>Olá! Me chamo Maicol e gosto de criar sites, sistemas e aplicativos. <br>Meu interesse pela programação começou em 2010 quando
-            estudei Algortimo e Programação pela primeira vez. <br>
-            Avançando para hoje, estudo Análise e Desenvolvimento de Sistemas e sempre que possível faço cursos de aperfeiçoamento.
-            <span id="mySpan">CURSOS</span>
-        </p>
-        
-        <div id="table">
-            <h3>Formação</h3>
-            <div class="tab">
-            <img src="https://img.icons8.com/fluency-systems-filled/40/393E46/education.png" class="tablinks" onclick="openGrad(event, 'Unisc')" id="defaultOpen">
-            <img src="https://img.icons8.com/fluency-systems-filled/40/393E46/education.png" class="tablinks" onclick="openGrad(event, 'Ufsm')">
-            </div>
-    
-            <div id="Unisc" class="tabcontent">
-                <h4>Unisc</h4>
-                <ul>
-                    <li>Curso: Análise e Desenvolvimento de Sistemas</li>
-                    <li>Status: Cursando</li>
-                    <li>Ingresso: 2021</li>
-                    <li>Conclusão: 2023</li>
-                </ul>
-            </div>
-            <div id="Ufsm" class="tabcontent">
-                <h4>Ufsm</h4>
-                <ul>
-                    <li>Curso: Engenharia de Control e Automação</li>
-                    <li>Status: Trancado</li>
-                    <li>Ingresso: 2010</li>
-                    <li>Conclusão: 36 Disciplinas</li>
-                </ul>
+        <div>
+            <p>Sou desenvolvedor Full Stack, apaixonado por criar sites e aplicativos móveis. Tenho um forte
+                conhecimento em desenvolvimento front-end e back-end e estou animado para colocar minhas habilidades
+                em projetos e ambientes profissionais. Aprendo rápido, trabalho em equipe e estou confiante
+                de que posso ser um recurso valioso para qualquer equipe de desenvolvimento e projeto.
+            </p>
+            <div id="studies">
+                <h3>Formação:</h3>
+                <p>&nbsp;Análise e Desenvolvimento de Sistemas <b>UNISC</b></p>
             </div>
         </div>
+
+        <div id="skills">
+            <h3>Skills</h3>
+            <div class="cards">
+                <h4>BACK-END</h4>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java" />
+                    <figcaption>
+                        JAVA
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        title="Spring" />
+                    <figcaption>
+                        Spring
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        title="Python" />
+                    <figcaption>
+                        Python
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
+                    <figcaption>
+                        Django
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" title="MySQL" />
+                    <figcaption>
+                        MySQL
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+                    <figcaption>
+                        Firebase
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="cards">
+                <h4>FRONT-END</h4>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        title="HTML5" />
+                    <figcaption>
+                        HTML
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" />
+                    <figcaption>
+                        CSS
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+                        title="JavaScript" />
+                    <figcaption>
+                        JS
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                        title="Bootstrap" />
+                    <figcaption>
+                        Bstrap
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    <figcaption>
+                        ReactJS
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="cards">
+                <h4>OUTROS</h4>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+                        title="TypeScript" />
+                    <figcaption>
+                        TScript
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg"
+                        title="Android" />
+                    <figcaption>
+                        Android
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="skill-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                    <figcaption>
+                        GIT
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <svg class="sevaw" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" transform="rotate(180)">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(117, 141, 114, 0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(117, 141, 114, 0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(117, 141, 114, 0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(117, 141, 114, 1)" />
+            </g>
+        </svg>
     </section>
+
+
 
     <section id="projetos">
         <h2>Projetos</h2>
-        <p>Em breve, aqui estarão meu principais projetos. Enquanto isso, você poderá ver alguns projetos meus
-            no GitHub.
-        </p>
+        
+        
         <div id="github">
-            <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/github.png"/>
+            <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/github.png" />
             <a href="https://github.com/Maiquera">GitHub</a>
         </div>
-        <img src="src/gif_site.gif" alt="">
+    
+            <img src="src/fundodevices-transformed.png" width="400px" alt="" srcset="">
+        
+
+
+        
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section id="contato">
         <h2>Contato</h2>
         <p>Sinta-se a vontadade para entrar em contato por estes canais:</p>
         <div id="conitens">
             <div class="itens">
-                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/linkedin-2--v1.png"/>
-                <a href="https://www.linkedin.com/in/maicol-menezes/"><p>www.linkedin.com</p></a>
+                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/linkedin-2--v1.png" />
+                <a href="https://www.linkedin.com/in/maicol-menezes/">
+                    <p>www.linkedin.com</p>
+                </a>
             </div>
             <div class="itens">
-                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/circled-envelope.png"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/circled-envelope.png" />
                 <p>maicolmenezes@gmail.com</p>
             </div>
             <div class="itens">
-                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png"/>
+                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png" />
                 <p>+55 (51)9 9587-0974</p>
             </div>
             <div class="itens">
-                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png"/>
+                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png" />
                 <p>+55 (51)9 8046-9821</p>
             </div>
         </div>
     </section>
     <footer>
+        <p>All right reserd</p>
         <p>Designed & Built by Maicol Manasses</p>
     </footer>
 
-    <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Cursos e Certificados</h2>
-                <ul>
-                    <li>
-                        <h4>Desenvolvimento Fron-End</h4>
-                        <li>Instituição: Grupo Voalle</li>
-                        <li>Duração: 12h</li>
-                        <li>Data: 08/2022</li>
-                    </li>
-                    <li>
-                        <h4>EF SET English Certificate (B1 Proficient)</h4>
-                        <li>Instituição: EF Standart English Test</li>
-                        <li>Duração: --</li>
-                        <li>Data: 08/2022</li>
-                    </li>
-                    <li>
-                        <h4>GFT Start Java</h4>
-                        <li>Instituição: Digital Innovation One</li>
-                        <li>Duração: 53h</li>
-                        <li>Data: 04/2022</li>
-                    </li>
-                    <li>
-                        <h4>GFT Quality Assurance</h4>
-                        <li>Instituição: Digital Innovation One</li>
-                        <li>Duração: 64h</li>
-                        <li>Data: 03/2022</li>
-                    </li>
-                    <li>
-                        <h4>Scrum Fundamentals Certificate</h4>
-                        <li>Instituição: SCRUMstudy</li>
-                        <li>Duração: --</li>
-                        <li>Data: 03/2022</li>
-                    </li>
-                    <li>
-                        <h4>Spread Java Developer</h4>
-                        <li>Instituição: Digital Innovation One</li>
-                        <li>Duração: 97h</li>
-                        <li>Data: 03/2022</li>
-                    </li>
-                    <li>
-                        <h4>Desenvolvedor Web Completo</h4>
-                        <li>Instituição: Udemy</li>
-                        <li>Duração: 48h</li>
-                        <li>Data: 09/2021</li>
-                    </li>
-                    <li>
-                        <h4>HTML Web Developer</h4>
-                        <li>Instituição: Digital Innovation One</li>
-                        <li>Duração: 27h</li>
-                        <li>Data: 07/2021</li>
-                    </li>
-                    <li>
-                        <h4>UI & UX Design</h4>
-                        <li>Instituição: Udemy</li>
-                        <li>Duração: 16h</li>
-                        <li>Data: 06/2021</li>
-                    </li>
-                </ul>
-            </div>
-        </div>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
