@@ -123,7 +123,6 @@ h1 {
     width: 150px;
 }
 
-
 /* ------------- section about ------------------ */
 
 #about {
@@ -149,13 +148,6 @@ h2 {
     text-decoration: underline;
     color: var(--fifth-color);
     font-size: 30px;
-}
-
-#studies {
-    display: flex;
-    align-items: baseline;
-    width: 100%;
-    margin-top: 6px;
 }
 
 #skills {
@@ -335,7 +327,7 @@ footer p {
     position: absolute;
     width: 100%;
     left: 0px;
-    bottom: -15vh;
+    bottom: -12vh;
     height: 0vh;
     min-height: 100px;
     max-height: 150px;
