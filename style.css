@@ -9,6 +9,7 @@
     --third-color: #758D72;
     --fourth-color: #577362;
     --fifth-color: #1B2A29;
+    --sixth-color: #D3DFD2;
 }
 
 * {
@@ -17,23 +18,17 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Share Tech Mono', monospace;
-    letter-spacing: 0.1rem;
-}
-
-body {
-    background-color: var(--fifth-color);
-
 }
 
 header {
     background-color: var(--fourth-color);
     position: fixed;
-    width: 100%;
-    height: 50px;
-    opacity: 0.9;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    opacity: 0.9;
     padding: 0% 6%;
     z-index: 5000;
 }
@@ -67,331 +62,19 @@ header ul li a:hover {
     display: none;
 }
 
-/* ------------- section home ------------------ */
-#home {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding: 0% 20%;
-    height: 100vh;
-    text-align: center;
-    align-items: center;
-}
-
-#name {
-    font-family: 'Lilita One', cursive;
-    font-size: 8em;
-    letter-spacing: -1px;
-    line-height: 100px;
-    color: var(--first-color);
-}
-
-#sname {
-    padding-left: 1px;
-    width: min-content;
-    font-family: 'Lilita One', cursive;
-    font-size: 5em;
-    letter-spacing: 8px;
-    line-height: 61px;
-    background-color: var(--first-color);
-    color: var(--fifth-color);
-}
-
-h1 {
-    font-size: x-large;
-    letter-spacing: 10px;
-    color: var(--second-color);
-    padding-left: 8px;
-}
-
-#wrapsocial {
-    position: absolute;
-    left: 5.5%;
-    height: 400px;
-    align-items: baseline;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 #fortune_sun {
-    position:absolute;
-    top:120px;
-    right:120px;
-    width: 150px;
+    margin-top: 10%;
+    width: 25%;
+    height: 25%;
 }
 
-/* ------------- section about ------------------ */
-
-#about {
-    position: relative;
-    background-color: var(--third-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    padding-top: 50px;
-    padding-left: 20%;
-    padding-right: 20%;
-
-}
-
-h3, p {
-    font-family: 'Lilita One', cursive;
-}
-
-h2 {
-    text-decoration: underline;
-    color: var(--fifth-color);
-    font-size: 30px;
-}
-
-#skills {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-top: 38px;
-}
-
-#skills h3 {
-    position: absolute;
-    top: -12px;
-    right: calc(50% - 25px);
-}
-
-.cards {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 30%;
-    min-height: 148px;
-    border: 1px solid var(--fifth-color);
-    border-radius: 8px;
-    padding-top: 6px;
-}
-
-.cards h4 {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    background-color: var(--third-color);
-    padding-left: 6px;
-    padding-right: 4px;
-}
-
-figure {
-    padding: 6px;
-}
-
-.skill-icon {
-    width: 40px;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 8px;
-}
-
-
-
-/* ------------------- section projects ---------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#projetos {
-    position: relative;
-    background-color: var(--fifth-color);
-    width: 100%;
-    height: 100vh;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#projetos h2 {
-    text-decoration: none;
-    color: var(--third-color);
-    text-align: center;
-    padding-left: 5px;
-
-}
-
-#github {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 150px;
-    border: 1px solid var(--second-color);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------- section contato ---------------------- */
-
-#contato {
-    width: 100%;
-    height: 100vh;
-    padding-left: 20%;
-    padding-right: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#conitens {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 50%;
-}
-
-.itens {
-    display: flex;
-    align-items: center;
-}
-
-.itens p {
-    padding-left: 10px;
-}
-
-.itens a {
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 13px;
-}
-
-footer p {
-    color: var(--second-color);
-}
-
-/* ----------------------------waves style----------------------- */
-
-.waves {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    left: 0px;
-    height: 15vh;
- 
-}
-
-.sevaw {
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    bottom: -12vh;
-    height: 0vh;
-    min-height: 100px;
-    max-height: 150px;
-    z-index: 1000;
-}
-
-/* Animation */
-
-.parallax>use {
-    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-
-.parallax>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-}
-
-.parallax>use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-}
-
-.parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-}
-
-.parallax>use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-}
-
-@keyframes move-forever {
-    0% {
-        transform: translate3d(-90px, 0, 0);
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 420px) {
+    #logo {
+        width: 25px;
+        height: 25px;
+        margin-top: 4px;
     }
-
-    100% {
-        transform: translate3d(85px, 0, 0);
-    }
-}
-
-/*Shrinking for mobile*/
-@media (width: 7680px) {
-    .waves {
-        height: 40px;
-        min-height: 40px;
-    }
-
-    .content {
-        height: 30vh;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-}
-
-
-
-
-/* ---------------------------------------------------------- */
-
-@media (max-width: 650px) {
 
     header ul {
         position: absolute;
@@ -417,29 +100,29 @@ footer p {
     .toggle {
         position: relative;
         display: block;
-        width: 30px;
+        width: 25px;
         height: 30px;
         cursor: pointer;
     }
 
     .toggle::before {
         position: absolute;
-        top: 4px;
+        top: 6px;
         width: 100%;
-        height: 2px;
-        background: var(--second-color);
+        height: 3px;
+        background: var(--first-color);
         content: '';
         z-index: 1;
-        box-shadow: 0 10px 0 var(--second-color);
+        box-shadow: 0 8px 0 var(--first-color);
         transition: 0.5s;
     }
 
     .toggle::after {
         position: absolute;
-        bottom: 4px;
+        bottom: 5px;
         width: 100%;
-        height: 2px;
-        background: var(--second-color);
+        height: 3px;
+        background: var(--first-color);
         content: '';
         z-index: 1;
         transition: 0.5s;
@@ -463,36 +146,234 @@ footer p {
         transform: translateY(0);
     }
 
+    /* ------------------------------------------- */
+
+    #home {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--fifth-color);
+    }
+
     #name {
-        font-size: 6rem;
+        font-family: 'Lilita One', cursive;
+        font-size: 5rem;
+        letter-spacing: -0.5px;
+        line-height: 65px;
         color: var(--first-color);
+        margin-top: 20%;
     }
+
     #sname {
-        font-size: 4em;
+        width: min-content;
+        font-family: 'Lilita One', cursive;
+        font-size: 2.8rem;
+        margin-left: 4.5px;
+        letter-spacing: 0.5rem;
+        line-height: 30px;
+        background-color: var(--first-color);
         color: var(--fifth-color);
-        letter-spacing: 4px;
     }
-    h1 {
-        font-size: medium;        
-        letter-spacing: 9px;
-        color: var(--second-color);
+
+    #fortune_sun {
+        margin-top: 10%;
+        width: 50%;
+        height: 50%;
     }
 
     #wrapsocial {
-        position: relative;
+        margin-top: 30%;
         display: flex;
-        flex-direction: row;
-        height: max-content;
-        width: 350px;
-        left: 0px;
-        top:100px;
+        justify-content: space-around;
+        width: 90%;
     }
 
-    #home,
-    #about,
-    #projetos,
-    #contato {
-        padding: 0% 8%;
+    /* ---------------ABOUT_SECTION-------------- */
+
+
+    /*--Wave_Animation--*/
+    .waves {
+        padding-top: 60px;
     }
-    /*------------*/  
-}                                                                                                                                                                                                                                   
+
+    .parallax>use {
+        animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    }
+
+    .parallax>use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+
+    .parallax>use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+
+    .parallax>use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+
+    .parallax>use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+
+    @keyframes move-forever {
+        0% {
+            transform: translate3d(-90px, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(85px, 0, 0);
+        }
+    }
+
+    /*-------------------*/
+
+    #about {
+        width: 100%;
+        height: auto;
+        background-color: #758D72;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    h2 {
+        font-family: 'Bebas Neue';
+        color: var(--fifth-color);
+        margin-top: 9px;
+    }
+
+    .standart {
+        padding: 18px 9px 18px 9px;
+        margin-bottom: 20px;
+    }
+
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 300px;
+        margin-top: 20px;
+        position: relative;
+        margin: auto;
+    }
+
+
+    /* card skills */
+
+    .card {
+        box-shadow: 3px 3px 9px 0 rgba(0, 0, 0, 0.2);
+        width: 230px;
+        height: 330px;
+        text-align: center;
+        font-family: arial;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 9px;
+        border: var(--fourth-color) 1px solid;
+    }
+
+    .tec_conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 100%;
+    }
+
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* The dots/bullets/indicators */
+    #dots {
+        margin: 30px 0px;
+
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    #projects {
+        width: 100%;
+        height: 700px;
+        background-color: #1B2A29;
+    }
+}
+
+
+/* header ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 300px;
+    justify-content: space-around;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--first-color);
+    transition: color 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    transition: ease-in;
+    color: var(--third-color);
+}
+
+.toggle {
+    display: none;
+} */

@@ -13,7 +13,7 @@
 <body>
     <header id="navbar">
         <a href="#home" onclick="toggle()">
-            <img src="src/Logo.png" width="30px" height="30px" alt="">
+            <img id="logo" src="src/Logo.png" width="22px" height="22px" alt="">
         </a>
         <ul>
             <li><a href="#" onclick="toggle()">HOME</a></li>
@@ -25,10 +25,10 @@
     </header>
 
     <section id="home">
+        <img id="fortune_sun" src="Untitled.png" />
         <p id="name">MAICOL</p>
         <p id="sname">MANASSES</p>
         <h1> FULL-STACK DEVELOPER</h1>
-        <img id="fortune_sun" src="Untitled.png"/>     
         <div id="wrapsocial">
             <a href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/linkedin.png"
                     alt="linkedin" /></a>
@@ -50,238 +50,136 @@
                 <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(117, 141, 114, 1)" />
             </g>
         </svg>
-
     </section>
-
+    <!---------------------------------------------------------->
     <section id="about">
         <h2>Sobre</h2>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis massa, ullamcorper vel lobortis sit amet, cursus non elit. Duis pretium, elit id mattis mollis, velit magna ultrices felis, vel vulputate purus arcu non metus. Praesent ornare venenatis nisl vitae volutpat. Morbi in viverra odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu aliquam turpis, eu auctor nunc. Nunc vitae lacus faucibus, ultrices augue eu, eleifend nulla. Donec vestibulum imperdiet mi, in tincidunt augue tristique fringilla. Suspendisse sagittis laoreet accumsan. Aliquam bibendum, libero vel varius varius, neque urna bibendum nisl, eu vulputate metus nunc ac diam. Sed varius euismod velit. Nulla facilisi. Morbi faucibus interdum lacinia. Donec imperdiet consectetur dui, quis malesuada lacus dignissim a.
-            </p>
-        </div>
+        <p class="standart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde a sint impedit, odit voluptas
+            quibusdam itaque
+            culpa enim eaque! Ipsum molestiae quaerat iure, perferendis similique cum exercitationem quo porro dolorum?
+        </p>
 
-        <div id="skills">
-            <h3>Skills</h3>
-            <div class="cards">
-                <h4>BACK-END</h4>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java" />
-                    <figcaption>
-                        JAVA
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                        title="Spring" />
-                    <figcaption>
-                        Spring
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                        title="Python" />
-                    <figcaption>
-                        Python
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
-                    <figcaption>
-                        Django
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" title="MySQL" />
-                    <figcaption>
-                        MySQL
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-                    <figcaption>
-                        Firebase
-                    </figcaption>
-                </figure>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="card">
+                    <h3> &#60 FRONT END /></h3>
+                    <div class="tec_conteiner">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            title="HTML5" />
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            title="CSS3" />
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+                            title="JavaScript" />
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                            title="Bootstrap" />
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    </div>
+                </div>
             </div>
 
-            <div class="cards">
-                <h4>FRONT-END</h4>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                        title="HTML5" />
-                    <figcaption>
-                        HTML
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" />
-                    <figcaption>
-                        CSS
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-                        title="JavaScript" />
-                    <figcaption>
-                        JS
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
-                        title="Bootstrap" />
-                    <figcaption>
-                        Bstrap
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                    <figcaption>
-                        ReactJS
-                    </figcaption>
-                </figure>
+            <div class="mySlides fade">
+                <div class="card">
+                    <h3> # BACK-END {</h3>
+                    <div class="tec_conteiner">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                            title="Java">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                            title="Spring">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                            title="Python">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+                    </div>
+                </div>
             </div>
-            <div class="cards">
-                <h4>OUTROS</h4>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-                        title="TypeScript" />
-                    <figcaption>
-                        TScript
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg"
-                        title="Android" />
-                    <figcaption>
-                        Android
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="skill-icon"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                    <figcaption>
-                        GIT
-                    </figcaption>
-                </figure>
+
+            <div class="mySlides fade">
+                <div class="card">
+                    <h3>* OUTROS %</h3>
+                    <div class="tec_conteiner">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+                            title="TypeScript">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg"
+                            title="Android">
+                        <img class="skill-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                    </div>
+                </div>
             </div>
         </div>
-        <svg class="sevaw" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" transform="rotate(180)">
-            <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(117, 141, 114, 0.7)" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(117, 141, 114, 0.5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(117, 141, 114, 0.3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(117, 141, 114, 1)" />
-            </g>
-        </svg>
-    </section>
 
-
-
-    <section id="projetos">
-        <h2>Projetos</h2>
-        
-        
-        <div id="github">
-            <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/github.png" />
-            <a href="https://github.com/Maiquera">GitHub</a>
+        <div id="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    
-            <img src="src/fundodevices-transformed.png" width="400px" alt="" srcset="">
-        
-
-
-        
-    </section>
 
 
 
 
+        <section id="projects">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" transform="rotate(180)">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(117, 141, 114, 0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(117, 141, 114, 0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(117, 141, 114, 0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(117, 141, 114, 1)" />
+                </g>
+            </svg>
 
+            <h1>aksoakoskasa</h1>
+            <h2>saushaushauhsua</h2>
+            <h3>ushauhsuahsua</h3>
+        </section>
 
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
 
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
 
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Sinta-se a vontadade para entrar em contato por estes canais:</p>
-        <div id="conitens">
-            <div class="itens">
-                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/linkedin-2--v1.png" />
-                <a href="https://www.linkedin.com/in/maicol-menezes/">
-                    <p>www.linkedin.com</p>
-                </a>
-            </div>
-            <div class="itens">
-                <img src="https://img.icons8.com/ios-glyphs/30/32E0C4/circled-envelope.png" />
-                <p>maicolmenezes@gmail.com</p>
-            </div>
-            <div class="itens">
-                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png" />
-                <p>+55 (51)9 9587-0974</p>
-            </div>
-            <div class="itens">
-                <img src="https://img.icons8.com/material-outlined/24/32E0C4/whatsapp--v1.png" />
-                <p>+55 (51)9 8046-9821</p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p>All right reserd</p>
-        <p>Designed & Built by Maicol Manasses</p>
-    </footer>
-
-    <script src="script.js"></script>
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides fade");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            } 
+        </script>
 </body>
 
 </html>
