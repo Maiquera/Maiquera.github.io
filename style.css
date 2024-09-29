@@ -162,7 +162,7 @@ header ul li a:hover {
         letter-spacing: -0.5px;
         line-height: 65px;
         color: var(--first-color);
-        margin-top: 20%;
+        margin-top: 39px;
     }
 
     #sname {
@@ -175,27 +175,30 @@ header ul li a:hover {
         background-color: var(--first-color);
         color: var(--fifth-color);
     }
+    
+    h1 {
+        color:#EA9B4D;;
+        letter-spacing: 0.9px;
+        margin-bottom: 39px;
+    }
 
     #fortune_sun {
-        margin-top: 10%;
+        margin-top: 60px;
         width: 50%;
         height: 50%;
     }
 
     #wrapsocial {
-        margin-top: 30%;
+        margin: 60px 0px;
         display: flex;
-        justify-content: space-around;
-        width: 90%;
+        justify-content: space-between;
+        width: 290px;
     }
 
     /* ---------------ABOUT_SECTION-------------- */
 
 
     /*--Wave_Animation--*/
-    .waves {
-        padding-top: 60px;
-    }
 
     .parallax>use {
         animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
@@ -247,7 +250,7 @@ header ul li a:hover {
     h2 {
         font-family: 'Bebas Neue';
         color: var(--fifth-color);
-        margin-top: 9px;
+        margin: 9px 0px;
     }
 
     .standart {
@@ -292,13 +295,15 @@ header ul li a:hover {
     .skill-icon {
         width: 50px;
         height: 50px;
-        margin: 10px;
+        margin: 0px 10px;
     }
 
-    li {
-        list-style: none;
+    .figcaption {
+        font-size: 0.6rem;
+        margin-top: -3px;
     }
 
+    
 
     /* Hide the images by default */
     .mySlides {
