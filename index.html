@@ -51,6 +51,8 @@
             </g>
         </svg>
     </section>
+
+
     <!---------------------------------------------------------->
     <section id="about">
         <h2>Sobre</h2>
@@ -165,51 +167,69 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="projects">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" transform="rotate(180)">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(117, 141, 114, 0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(117, 141, 114, 0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(117, 141, 114, 0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(117, 141, 114, 1)" />
+            </g>
+        </svg>
+        <h2>Projetos</h2>
+        <div class="proj-container">
+            <p class="title" style="text-align: center;"   >www.maicolmanasses.com.br</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe> 
+            
+            <p class="tecnologies">Tecnologias: Java, Spring ...</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, minima molestias enim
+                corrupti perspiciatis ipsa a animi sit tempore minus quas! Labore error dolorum consequuntur neque
+                nesciunt, voluptatum totam quod.</p>
+        </div>
+    </section>
 
-        <section id="projects">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" transform="rotate(180)">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(117, 141, 114, 0.7)" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(117, 141, 114, 0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(117, 141, 114, 0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(117, 141, 114, 1)" />
-                </g>
-            </svg>
-            <h1>Projetos</h1>
-        </section>
+
+    <!-- --------Projects -------- -->
 
 
 
 
-        <script>
-            let slideIndex = 0;
-            showSlides();
 
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+    <!-- ----------------------------------------------------------- -->
+
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            setTimeout(showSlides, 3000);
 
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if(slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-                setTimeout(showSlides, 3000);
+            slides[slideIndex - 1].style.display = "block";
 
-                slides[slideIndex - 1].style.display = "block";
-                    
-            } 
-        </script>
+        } 
+    </script>
 </body>
 
 </html>
