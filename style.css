@@ -243,7 +243,7 @@ header ul li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 180px;
+        padding-top: 90px;
     }
 
     h2 {
@@ -280,6 +280,7 @@ header ul li a:hover {
         justify-content: space-around;
         border-radius: 9px;
         border: var(--fourth-color) 1px solid;
+        margin-bottom: 90px;
     }
 
     .tec_conteiner {
@@ -309,43 +310,6 @@ header ul li a:hover {
         display: none;
     }
 
-    /* The dots/bullets/indicators */
-    #dots {
-        margin: 30px 0px 169px;
-        width: 100%;
-
-    }
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
 
     #projects {
         width: 100%;
@@ -353,32 +317,3 @@ header ul li a:hover {
         background-color: #1B2A29;
     }
 }
-
-
-/* header ul {
-    position: relative;
-    display: flex;
-    list-style: none;
-    text-align: center;
-    width: 300px;
-    justify-content: space-around;
-}
-
-header ul li a {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--first-color);
-    transition: color 0.5s ease-in-out;
-    font-weight: bold;
-}
-
-header ul li a:hover {
-    transition: ease-in;
-    color: var(--third-color);
-}
-
-.toggle {
-    display: none;
-} */

@@ -166,12 +166,6 @@
             </div>
         </div>
 
-        <div id="dots" style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
         <section id="projects">
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" transform="rotate(180)">
@@ -192,39 +186,28 @@
 
 
 
-
-
-
-
-        
         <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
+            let slideIndex = 0;
+            showSlides();
 
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
             function currentSlide(n) {
                 showSlides(slideIndex = n);
             }
 
             function showSlides(n) {
                 let i;
-                let slides = document.getElementsByClassName("mySlides fade");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
+                let slides = document.getElementsByClassName("mySlides");
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+                slideIndex++;
+                if(slideIndex > slides.length) {
+                    slideIndex = 1;
                 }
+                setTimeout(showSlides, 3000);
+
                 slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
+                    
             } 
         </script>
 </body>
