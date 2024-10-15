@@ -309,6 +309,29 @@ header ul li a:hover {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* -------projects section------ */
+
+
     #projects {
         width: 100%;
         height: 700px;
@@ -319,4 +342,34 @@ header ul li a:hover {
         color: #EA9B4D;
         text-align: center;
     }
+
+    .project-container{
+        color:#D3DFD2;
+        height: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
