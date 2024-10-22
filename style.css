@@ -354,6 +354,35 @@ header ul li a:hover {
 
 
 
+    /* -------contact section------ */
+
+    #contatc {
+        background-color: #758D72;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    #contatc h2 {
+        color: #1B2A29;
+    }
+
+    #contacts {
+        height: 400px;
+        width: 90%;
+        padding-left: 9%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .waves {
+        background-color: #1B2A29;
+    }
+
+
 
 
 
