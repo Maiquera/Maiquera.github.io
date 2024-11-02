@@ -175,9 +175,9 @@ header ul li a:hover {
         background-color: var(--first-color);
         color: var(--fifth-color);
     }
-    
+
     h1 {
-        color:#EA9B4D;
+        color: #EA9B4D;
         letter-spacing: 0.9px;
         margin-bottom: 39px;
     }
@@ -338,13 +338,13 @@ header ul li a:hover {
         background-color: #1B2A29;
     }
 
-    h2:nth-child(2){
+    h2:nth-child(2) {
         color: #EA9B4D;
         text-align: center;
     }
 
-    .project-container{
-        color:#D3DFD2;
+    .project-container {
+        color: #D3DFD2;
         height: 390px;
         display: flex;
         flex-direction: column;
@@ -364,7 +364,7 @@ header ul li a:hover {
         width: 100%;
         align-items: center;
     }
-    
+
     #contatc h2 {
         color: #1B2A29;
     }
@@ -380,6 +380,24 @@ header ul li a:hover {
 
     .waves {
         background-color: #1B2A29;
+    }
+
+    /* ---- footer ----- */
+
+    footer {
+        width: 100%;
+        height: 180px;
+        background-color: #090909;
+        color: #D3DFD2;
+    }
+
+    footer .waves {
+        background-color: #758D72;
+    }
+
+    .core {
+        display: flex;
+        width: 100%;
     }
 
 
