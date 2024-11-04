@@ -243,13 +243,14 @@ header ul li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 90px;
     }
 
     h2 {
         font-family: 'Bebas Neue';
         color: var(--fifth-color);
+        font-size: 30px;
         margin: 9px 0px;
+        padding-top: 90px;
     }
 
     .standart {
