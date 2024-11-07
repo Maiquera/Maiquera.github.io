@@ -337,6 +337,7 @@ header ul li a:hover {
         width: 100%;
         height: auto;
         background-color: #1B2A29;
+        padding-bottom: 60px;
     }
 
     h2:nth-child(2) {
@@ -346,11 +347,21 @@ header ul li a:hover {
 
     .project-container {
         color: #D3DFD2;
-        height: 390px;
+        height: 339px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         margin: 0px 9px;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .description, .tecnologies {
+        font-size: 13px;
+        color: #758D72;
     }
 
 
@@ -361,7 +372,6 @@ header ul li a:hover {
         background-color: #758D72;
         display: flex;
         flex-direction: column;
-        height: 600px;
         width: 100%;
         align-items: center;
     }
@@ -397,17 +407,19 @@ header ul li a:hover {
     }
 
     .core {
+        background-color: #090909;
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 99px;
+        height: 136px;
         align-items: center;
         justify-content: space-around;
+        padding-top: 9px;
     }
     .site-map{
         width: 90%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
 
