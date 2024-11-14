@@ -366,6 +366,19 @@ header ul li a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* -------contact section------ */
 
     #contatc {
@@ -387,11 +400,60 @@ header ul li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: self-start;
+    }
+
+    .contatc_op {
+        height: 28px;
+        display: flex;
+        align-items: center;
     }
 
     .waves {
         background-color: #1B2A29;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ---- footer ----- */
 
@@ -415,11 +477,18 @@ header ul li a:hover {
         align-items: center;
         justify-content: space-around;
         padding-top: 9px;
+        
     }
     .site-map{
         width: 90%;
         display: flex;
         justify-content: space-evenly;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
     }
 
 
