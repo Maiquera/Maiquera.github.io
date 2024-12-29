@@ -94,7 +94,6 @@ header ul li a:hover {
         margin: 5px 0;
         font-size: 24px;
         align-items: center;
-
     }
 
     .toggle {
@@ -145,6 +144,14 @@ header ul li a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+    
+    .bolinha {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 10px;
+    }
 
     /* ------------------------------------------- */
 
@@ -191,7 +198,7 @@ header ul li a:hover {
     #wrapsocial {
         margin: 60px 0px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 290px;
     }
 
@@ -267,6 +274,21 @@ header ul li a:hover {
         margin: auto;
     }
 
+    .bolinha {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+
+      .active, .bolinha:hover {
+        background-color: #717171;
+      }
+
 
     /* card skills */
 
@@ -281,7 +303,7 @@ header ul li a:hover {
         justify-content: space-around;
         border-radius: 9px;
         border: var(--fourth-color) 1px solid;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
     }
 
     .tec_conteiner {

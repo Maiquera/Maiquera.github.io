@@ -23,9 +23,14 @@
             <li><a href="#projetos" onclick="toggle()">PROJETOS</a></li>
             <li><a href="#contato" onclick="toggle()">CONTATO</a></li>
         </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <div class="toggle" onclick="toggle()"></div>
     </header>
-    
+
 
     <section id="home">
         <img id="fortune_sun" src="Untitled.png" />
@@ -169,6 +174,11 @@
                 </div>
             </div>
         </div>
+        <div style="margin-bottom: 30px;">
+            <span class="bolinha" onclick="currentSlide(1)"></span>
+            <span class="bolinha" onclick="currentSlide(2)"></span>
+            <span class="bolinha" onclick="currentSlide(3)"></span>
+        </div>
     </section>
 
 
@@ -267,8 +277,8 @@
                 <p><a href="">PROJECTS</a></p>
                 <p><a href="">CONTACT</a></p>
             </div>
-            <p class="created" style="color: #BF9F1C; letter-spacing: -2px; font-style: italic;" >
-                Design and build by Maicol Manasses© 
+            <p class="created" style="color: #BF9F1C; letter-spacing: -2px; font-style: italic;">
+                Design and build by Maicol Manasses©
             </p>
             <p style="color: #758D72"> Icons credits <a href="https://www.flaticon.com/">flaticon.com</a>
         </div>
@@ -314,7 +324,31 @@
 
 
     <script>
-        let slideIndex = 0;
+
+        function toggle_menu(x) {
+            x.classList.toggle("change");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let slideIndex = 1;
         showSlides();
 
         function currentSlide(n) {
@@ -324,18 +358,32 @@
         function showSlides(n) {
             let i;
             let slides = document.getElementsByClassName("mySlides");
+            let bolinhas = document.getElementsByClassName("bolinha");
+            if (n > slides.length) { slideIndex = 1 };
+            if (n < 1) { slideIndex = slides.length };
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
+            for (i = 0; i < bolinhas.length; i++) {
+                bolinhas[i].className = bolinhas[i].className.replace(" active", "");
             }
+            // slideIndex++;
+            // if (slideIndex > slides.length) {
+            //     slideIndex = 1;
+            // }
             setTimeout(showSlides, 3000);
-
             slides[slideIndex - 1].style.display = "block";
+            bolinhas[slideIndex - 1].className += " active";
+        }
 
-        } 
+
+
+
+
+
+
+
+
     </script>
 </body>
 
