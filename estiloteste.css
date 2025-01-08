@@ -1,0 +1,43 @@
+body {
+    background-color: blueviolet;
+    margin-top: 200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel {
+    background-color: rosybrown;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .skills {
+    position: relative;
+  }
+  .card {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    opacity: 0;
+  }
+  .indicators {
+    background-color: black;
+  }
+
+  .indicator {
+    width: 330px;
+    height: 140px;
+    background-color: violet;
+    margin: 2px;
+  }
+  .active {
+    /* Estilos para o card e indicador ativos */
+    background-color: darkblue;
+  }
+
+  .card.active{
+    opacity: 1;
+  }

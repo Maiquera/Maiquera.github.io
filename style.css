@@ -144,7 +144,7 @@ header ul li a:hover {
         opacity: 1;
         transform: translateY(0);
     }
-    
+
     .bolinha {
         width: 20px;
         height: 20px;
@@ -262,55 +262,44 @@ header ul li a:hover {
 
     .standart {
         padding: 18px 9px 18px 9px;
-        margin-bottom: 20px;
     }
 
 
     /* Slideshow container */
     .slideshow-container {
-        max-width: 300px;
-        margin-top: 20px;
         position: relative;
         margin: auto;
+        width: 100%;
+        height: 390px;
     }
-
-    .bolinha {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-      }
-
-      .active, .bolinha:hover {
-        background-color: #717171;
-      }
-
 
     /* card skills */
 
     .card {
+
+        position: absolute;
         box-shadow: 3px 3px 9px 0 rgba(0, 0, 0, 0.2);
         width: 230px;
         height: 330px;
         text-align: center;
         font-family: arial;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
         border-radius: 9px;
         border: var(--fourth-color) 1px solid;
         margin-bottom: 30px;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 30px;
     }
 
     .tec_conteiner {
+        position: absolute;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin-top: 49px;
         height: 50%;
         width: 100%;
     }
@@ -326,9 +315,25 @@ header ul li a:hover {
         margin-top: -3px;
     }
 
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
+    .card.active {
+        opacity: 1;
+    }
+
+
+
+    .bolinha {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: var(--fourth-color);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .bolinha.active {
+        background-color: var(--fifth-color)
     }
 
 
@@ -381,7 +386,8 @@ header ul li a:hover {
         font-weight: bold;
     }
 
-    .description, .tecnologies {
+    .description,
+    .tecnologies {
         font-size: 13px;
         color: #758D72;
     }
@@ -499,9 +505,10 @@ header ul li a:hover {
         align-items: center;
         justify-content: space-around;
         padding-top: 9px;
-        
+
     }
-    .site-map{
+
+    .site-map {
         width: 90%;
         display: flex;
         justify-content: space-evenly;
