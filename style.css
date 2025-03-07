@@ -22,15 +22,13 @@
 
 header {
     background-color: var(--fourth-color);
-    position: fixed;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 6px 6px;
+    position: fixed;
     width: 100%;
-    height: 40px;
+    z-index: 8000;
     opacity: 0.9;
-    padding: 0% 6%;
-    z-index: 5000;
 }
 
 header ul {
@@ -48,14 +46,14 @@ header ul li a {
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
-    color: var(--first-color);
+    color: var(--sixth-color);
     transition: color 0.5s ease-in-out;
     font-weight: bold;
 }
 
 header ul li a:hover {
     transition: ease-in;
-    color: var(--third-color);
+    color: aqua;
 }
 
 .toggle {
@@ -68,90 +66,88 @@ header ul li a:hover {
     height: 25%;
 }
 
+.menu-icon {
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    border-radius: 3px;
+    width: 26px;
+    height: 4px;
+    background-color: var(--sixth-color);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 6px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+}
+
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 420px) {
+
+   
     #logo {
-        width: 25px;
-        height: 25px;
+        width: 19px;
+        height: 19px;
         margin-top: 4px;
     }
 
-    header ul {
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        padding: 20px 20px;
-        background: var(--four-color);
-        overflow: auto;
-        transition: 0.5s;
-        flex-direction: column;
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    header ul li a {
-        margin: 5px 0;
-        font-size: 24px;
-        align-items: center;
-    }
-
-    .toggle {
-        position: relative;
+    .menu-icon {
         display: block;
-        width: 25px;
-        height: 30px;
-        cursor: pointer;
+        margin-top: 1px;
     }
 
-    .toggle::before {
-        position: absolute;
-        top: 6px;
-        width: 100%;
-        height: 3px;
-        background: var(--first-color);
-        content: '';
-        z-index: 1;
-        box-shadow: 0 8px 0 var(--first-color);
-        transition: 0.5s;
+    .menu-icon .change {
+        background-color: #090909;
     }
 
-    .toggle::after {
-        position: absolute;
-        bottom: 5px;
-        width: 100%;
-        height: 3px;
-        background: var(--first-color);
-        content: '';
-        z-index: 1;
-        transition: 0.5s;
+    .nav-links {
+        display: none;
+        margin-top: 33px;
     }
 
-    header.active .toggle::before {
-        top: 14px;
-        transform: rotate(45deg);
-        box-shadow: 0 0 0 var(--second-color);
+    .nav-links li {
+        margin: 33px 0px 66px 0px;
+        list-style: none;
+        font-size: x-large;
+        
     }
 
-    header.active .toggle::after {
-        bottom: 14px;
-        transform: rotate(-45deg);
-        box-shadow: 0 0 0 var(--second-color);
+    .nav-links li a{
+        font-family: arial black;
     }
 
-    header.active ul {
-        top: 50px;
-        opacity: 1;
-        transform: translateY(0);
-    }
 
-    .bolinha {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        display: inline-block;
-        margin: 10px;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ------------------------------------------- */
 
@@ -256,8 +252,9 @@ header ul li a:hover {
         font-family: 'Bebas Neue';
         color: var(--fifth-color);
         font-size: 30px;
-        margin: 9px 0px;
+        margin: 19px 9px;
         padding-top: 90px;
+        text-decoration: underline;
     }
 
     .standart {
@@ -429,6 +426,7 @@ header ul li a:hover {
         flex-direction: column;
         justify-content: space-around;
         align-items: self-start;
+        margin-bottom: 60px;
     }
 
     .contatc_op {
@@ -439,6 +437,10 @@ header ul li a:hover {
 
     .waves {
         background-color: #1B2A29;
+    }
+
+    .contact {
+        padding-left: 30px;
     }
 
 
