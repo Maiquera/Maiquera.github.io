@@ -24,7 +24,7 @@ header {
     background-color: var(--fourth-color);
     display: flex;
     justify-content: space-between;
-    padding: 6px 6px;
+    padding: 6px 16px;
     position: fixed;
     width: 100%;
     z-index: 8000;
@@ -53,7 +53,7 @@ header ul li a {
 
 header ul li a:hover {
     transition: ease-in;
-    color: aqua;
+    color: var(--second-color);
 }
 
 .toggle {
@@ -74,7 +74,7 @@ header ul li a:hover {
 .bar2,
 .bar3 {
     border-radius: 3px;
-    width: 26px;
+    width: 23px;
     height: 4px;
     background-color: var(--sixth-color);
     margin: 3px 0;
@@ -96,16 +96,16 @@ header ul li a:hover {
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 420px) {
 
-   
-    #logo {
-        width: 19px;
-        height: 19px;
+    
+    #logo{
+        width: auto;
+        height: 20px;
         margin-top: 4px;
     }
 
     .menu-icon {
         display: block;
-        margin-top: 1px;
+        padding-top: 2px;
     }
 
     .menu-icon .change {
