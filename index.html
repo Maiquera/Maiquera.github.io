@@ -35,55 +35,23 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section id="home">
         <img id="fortune_sun" src="Untitled.png" />
         <p id="name">MAICOL</p>
         <p id="sname">MANASSES</p>
         <h1> FULL-STACK DEVELOPER</h1>
+
+
         <div id="wrapsocial">
-            <a href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/linkedin.png"
+            <a href="https://www.linkedin.com/in/maicol-menezes/" class="icon icon-1"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/linkedin.png"
                     alt="linkedin" /></a>
-            <a href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/github--v1.png"
+            <a href="https://github.com/Maiquera" class="icon icon-2"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/github--v1.png"
                     alt="github--v1" /></a>
-            <a href="#"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/behance.png"
+            <a href="https://www.behance.net/maicolcheiram" class="icon icon-3"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/behance.png"
                     alt="behance" /></a>
         </div>
+
+
 
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -336,50 +304,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script>
 
-
-        // const menuIcon = document.querySelector('.menu-icon');
-        // const navLinks = document.querySelector('.nav-links');
-
-        // menuIcon.addEventListener('click', () => {
-        //     navLinks.classList.toggle('show');
-        // });
-
-
-
-
-
-
-
-        // -------------------- Animção do hamburguer -------------------------
+        // -------------------- Animção do hamburguer ------------------------- //
 
         const menu = document.querySelector('.nav-links');
         const anim = document.querySelector('.menu-icon');
@@ -391,27 +318,14 @@
             x.classList.toggle("change");
         }
 
-        // -----------------------------------------------------------//
+        // ------------------ Skills Card ----------------------------------- //
 
-
-
-
-
-
-
-
-
-        // Selecionando os elementos necessários
         const cards = document.querySelectorAll('.card');
         const indicators = document.querySelectorAll('.bolinha');
-        // const prevButton = document.getElementById('prev');
-        // const nextButton = document.getElementById('next');
 
-        // Variáveis para controlar o carrossel
         let currentSlide = 0;
         let slideInterval;
 
-        // Função para mostrar um slide específico
         function showSlide(n) {
             cards.forEach((card, index) => {
                 card.classList.remove('active');
@@ -422,65 +336,24 @@
             currentSlide = n;
         }
 
-        // Função para iniciar o carrossel automaticamente
         function startSlideShow() {
             slideInterval = setInterval(() => {
                 showSlide((currentSlide + 1) % cards.length);
-            }, 2000); // Ajuste o intervalo de tempo entre as transições
+            }, 2000);
         }
 
-        // Função para pausar o carrossel
         function pauseSlideShow() {
             clearInterval(slideInterval);
         }
 
-        // Função para lidar com os cliques nos indicadores
         indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', () => {
                 showSlide(index);
-                pauseSlideShow(); // Pausar o carrossel ao clicar em um indicador
+                pauseSlideShow();
             });
         });
 
-        // // Função para navegar para o próximo slide
-        // nextButton.addEventListener('click', () => {
-        //     showSlide((currentSlide + 1) % cards.length);
-        // });
-
-        // // Função para navegar para o slide anterior
-        // prevButton.addEventListener('click', () => {
-        //     showSlide((currentSlide - 1 + cards.length) % cards.length);
-        // });
-
-        // Iniciar o carrossel
         startSlideShow();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </script>

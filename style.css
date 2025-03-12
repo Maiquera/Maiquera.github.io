@@ -191,12 +191,52 @@ header ul li a:hover {
         height: 50%;
     }
 
+
+
+
+
+
+
+
+
+
     #wrapsocial {
         margin: 60px 0px;
         display: flex;
         justify-content: space-around;
         width: 290px;
     }
+
+    .icon {
+        position: relative;
+        animation: wave 2s infinite ease-in-out
+    }
+
+    @keyframes wave {
+        0%, 100%{
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-6px);
+        }
+        
+    }
+
+    .icon-1 {
+        animation-delay: 0s;
+    }
+
+    .icon-2 {
+        animation-delay: 0.33s;
+    }
+
+    .icon-3 {
+        animation-delay: 0.66s;
+    }
+
+
+
+
 
     /* ---------------ABOUT_SECTION-------------- */
 
