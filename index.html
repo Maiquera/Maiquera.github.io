@@ -43,12 +43,12 @@
 
 
         <div id="wrapsocial">
-            <a href="https://www.linkedin.com/in/maicol-menezes/" class="icon icon-1"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/linkedin.png"
-                    alt="linkedin" /></a>
-            <a href="https://github.com/Maiquera" class="icon icon-2"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/github--v1.png"
-                    alt="github--v1" /></a>
-            <a href="https://www.behance.net/maicolcheiram" class="icon icon-3"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/D3DFD2/behance.png"
-                    alt="behance" /></a>
+            <a href="https://www.linkedin.com/in/maicol-menezes/" class="icon icon-1"><img width="40" height="40"
+                    src="https://img.icons8.com/ios-filled/50/D3DFD2/linkedin.png" alt="linkedin" /></a>
+            <a href="https://github.com/Maiquera" class="icon icon-2"><img width="40" height="40"
+                    src="https://img.icons8.com/ios-filled/50/D3DFD2/github--v1.png" alt="github--v1" /></a>
+            <a href="https://www.behance.net/maicolcheiram" class="icon icon-3"><img width="40" height="40"
+                    src="https://img.icons8.com/ios-filled/50/D3DFD2/behance.png" alt="behance" /></a>
         </div>
 
 
@@ -70,10 +70,10 @@
 
     <section id="about">
         <h2>Sobre</h2>
-        <p class="standart">Sou um desenvolvedor full stack em formação, apaixonado por transformar ideias 
-            em realidade através do código. Minha jornada na programação começou há alguns 
-            anos, explorando linguagens como C e Java no desenvolvimento mobile nativo. 
-            Ao longo do tempo, expandi meus conhecimentos para o desenvolvimento web, 
+        <p class="standart">Sou um desenvolvedor full stack em formação, apaixonado por transformar ideias
+            em realidade através do código. Minha jornada na programação começou há alguns
+            anos, explorando linguagens como C e Java no desenvolvimento mobile nativo.
+            Ao longo do tempo, expandi meus conhecimentos para o desenvolvimento web,
             dominando HTML, CSS, JavaScript e frameworks modernos. <br>
             Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e procurando
             oportunidades para aplicar meus conhecimentos.
@@ -226,8 +226,32 @@
     </section>
 
 
-    <section id="contatc">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="contatc">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -253,7 +277,7 @@
             </div>
             <div class="contatc_op">
                 <img width="21" height="21" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin" />
-                <div class="contact">maicolmenezes@gmail.com</div>
+                <div class="contact"><a href="https://www.linkedin.com/in/maicol-menezes/">www.linkedin.com/in</a></div>
             </div>
             <div class="contatc_op">
                 <img width="20" height="20" src="https://img.icons8.com/material-rounded/24/new-post.png"
@@ -262,6 +286,33 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -280,10 +331,10 @@
         </svg>
         <div class="core">
             <div class="site-map">
-                <p><a href="">HOME</a></p>
-                <p><a href="">ABOUT</a></p>
-                <p><a href="">PROJECTS</a></p>
-                <p><a href="">CONTACT</a></p>
+                <p><a href="#">HOME</a></p>
+                <p><a href="#about">ABOUT</a></p>
+                <p><a href="#projects">PROJECTS</a></p>
+                <p><a href="#contatc">CONTACT</a></p>
             </div>
             <p class="created" style="color: #BF9F1C; letter-spacing: -2px; font-style: italic;">
                 Design and build by Maicol Manasses©
@@ -354,6 +405,22 @@
         });
 
         startSlideShow();
+
+        /*--------------------- contacts section animation ----------------------*/
+
+        const contatoSection = document.getElementById('contacts');
+
+        function verificarVisibilidade() {
+            const posicaoTopo = contatoSection.getBoundingClientRect().top;
+            const alturaTela = window.innerHeight;
+
+            if (posicaoTopo < alturaTela * 0.75) {
+                contatoSection.classList.add('visivel');
+            }
+        }
+
+        window.addEventListener('scroll', verificarVisibilidade);
+        verificarVisibilidade();
 
 
     </script>

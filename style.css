@@ -473,6 +473,12 @@ header ul li a:hover {
         height: 28px;
         display: flex;
         align-items: center;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+    }
+
+    #contacts.visivel .contatc_op{
+        opacity: 1;
     }
 
     .waves {
