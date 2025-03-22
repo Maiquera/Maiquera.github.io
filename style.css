@@ -60,12 +60,6 @@ header ul li a:hover {
     display: none;
 }
 
-#fortune_sun {
-    margin-top: 10%;
-    width: 25%;
-    height: 25%;
-}
-
 .menu-icon {
     display: none;
 }
@@ -93,6 +87,141 @@ header ul li a:hover {
     transform: translate(0, -8px) rotate(45deg);
 }
 
+/* -----------home desktop-------------------- */
+
+#home {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fifth-color);
+}
+
+#name {
+    font-family: 'Lilita One', cursive;
+    font-size: 5rem;
+    letter-spacing: -0.5px;
+    line-height: 65px;
+    color: var(--first-color);
+    margin-top: 39px;
+}
+
+#sname {
+    width: min-content;
+    font-family: 'Lilita One', cursive;
+    font-size: 2.8rem;
+    margin-left: 4.5px;
+    letter-spacing: 0.5rem;
+    line-height: 30px;
+    background-color: var(--first-color);
+    color: var(--fifth-color);
+}
+
+h1 {
+    color: #EA9B4D;
+    letter-spacing: 0.9px;
+    margin-bottom: 39px;
+}
+
+#fortune_sun {
+    margin-top: 60px;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+#wrapsocial {
+    margin: 60px 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 290px;
+}
+
+.icon {
+    position: relative;
+    animation: wave 2s infinite ease-in-out
+}
+
+@keyframes wave {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    
+}
+
+.icon-1 {
+    animation-delay: 0s;
+}
+
+.icon-2 {
+    animation-delay: 0.33s;
+}
+
+.icon-3 {
+    animation-delay: 0.66s;
+}
+
+
+
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 420px) {
 
@@ -239,45 +368,6 @@ header ul li a:hover {
 
 
     /* ---------------ABOUT_SECTION-------------- */
-
-
-    /*--Wave_Animation--*/
-
-    .parallax>use {
-        animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-    }
-
-    .parallax>use:nth-child(1) {
-        animation-delay: -2s;
-        animation-duration: 7s;
-    }
-
-    .parallax>use:nth-child(2) {
-        animation-delay: -3s;
-        animation-duration: 10s;
-    }
-
-    .parallax>use:nth-child(3) {
-        animation-delay: -4s;
-        animation-duration: 13s;
-    }
-
-    .parallax>use:nth-child(4) {
-        animation-delay: -5s;
-        animation-duration: 20s;
-    }
-
-    @keyframes move-forever {
-        0% {
-            transform: translate3d(-90px, 0, 0);
-        }
-
-        100% {
-            transform: translate3d(85px, 0, 0);
-        }
-    }
-
-    /*-------------------*/
 
     #about {
         width: 100%;
